@@ -1,7 +1,7 @@
 # react-pokemons-app. Formation par Udemy
 
 Développez facilement une application React de Pokémons à partir d'un dossier vide, avec React, les Hooks et TypeScript.
-## Ce que j'ai acquis lors de cette formation##
+## Ce que j'ai acquis lors de cette formation
 
 - Créer une application React complète à partir d'un dossier vide
 - Développer un système de navigation entre composants
@@ -10,7 +10,7 @@ Développez facilement une application React de Pokémons à partir d'un dossier
 - Mettre en place un système d'authentification
 - Déployer une application React en production
 
-## Les prérequis pour ce cours##
+## Les prérequis pour ce cours
 
 - Connaître un minimum le HTML et le CSS
 - Avoir déjà entendu parler de JavaScript
