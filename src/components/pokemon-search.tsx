@@ -2,24 +2,24 @@ import React, { FunctionComponent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Pokemon from '../models/pokemon';
 import PokemonService from '../services/pokemon-service';
- 
+
 const PokemonSearch: FunctionComponent = () => {
-  
+ 
   const [term, setTerm] = useState<string>('');
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
- 
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const term = e.target.value;
     setTerm(term);
- 
-    if(term.length <= 1) {
+
+    if(term.length <= 10) {
       setPokemons([]);
       return;
     }
- 
+
     PokemonService.searchPokemon(term).then(pokemons => setPokemons(pokemons));
   }
-  
+ 
   return (
     <div className="row"> 
     <div className="col s12 m6 offset-m3"> 
@@ -41,5 +41,5 @@ const PokemonSearch: FunctionComponent = () => {
     </div>
   );
 }
-  
+ 
 export default PokemonSearch;

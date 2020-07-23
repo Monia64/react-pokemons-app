@@ -11,7 +11,7 @@ const PokemonList: FunctionComponent = () => {
   
   useEffect(() => {
     setPokemons (POKEMONS);
-    PokemonService.getPokemons().then(pokemons => setPokemons(pokemons));
+    // PokemonService.getPokemons().then(pokemons => setPokemons(pokemons));
 
   }, []);
   
