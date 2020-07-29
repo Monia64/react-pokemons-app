@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Pokemon from '../models/pokemon';
 import PokemonService from '../services/pokemon-service';
+import POKEMONS from '../models/mock-pokemons';
 
 const PokemonSearch: FunctionComponent = () => {
  
@@ -12,12 +13,12 @@ const PokemonSearch: FunctionComponent = () => {
     const term = e.target.value;
     setTerm(term);
 
-    if(term.length <= 10) {
+    if(term.length <= 1) {
       setPokemons([]);
       return;
     }
 
-    PokemonService.searchPokemon(term).then(pokemons => setPokemons(pokemons));
+     PokemonService.searchPokemon(term).then(pokemons => setPokemons(POKEMONS));
   }
  
   return (
