@@ -5,7 +5,6 @@ import PokemonForm from '../components/pokemon-form';
 import Pokemon from '../models/pokemon';
 import PokemonService from '../services/pokemon-service';
 import Loader from '../components/loader';
-import POKEMONS from '../models/mock-pokemons';
 
  
 type Params = { id: string };
